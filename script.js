@@ -9,7 +9,6 @@
   const ctx = canvas.getContext("2d");
   const editButton = document.getElementById("edit-name");
   const pngButton = document.getElementById("download-png");
-  const pdfButton = document.getElementById("download-pdf");
   const statusText = document.getElementById("download-status");
 
   const background = new Image();
