@@ -267,57 +267,30 @@ button {
 
 .mascot-area {
   position: absolute;
+  top: 24px;
+  right: 34px;
 
-  top: 34px;
-  right: 46px;
-
-  width: 160px;
-  height: 145px;
+  width: 210px;
+  height: 190px;
 
   display: grid;
   place-items: center;
 
-  border-radius:
-    45% 55% 48% 52%;
-
-  background:
-    linear-gradient(
-      145deg,
-      rgba(238, 233, 248, 0.95),
-      rgba(213, 238, 255, 0.9)
-    );
+  background: transparent;
+  border: none;
+  border-radius: 0;
 }
 
 .mascot-image {
   display: block;
 
-  width: 132px;
-  height: 132px;
+  width: 190px;
+  height: 190px;
 
   object-fit: contain;
 
-  filter:
-    drop-shadow(
-      0 15px 16px rgba(78, 28, 125, 0.22)
-    );
+  filter: none;
 }
-
-/* Etiqueta rosa */
-
-.eyebrow {
-  display: inline-flex;
-
-  margin: 78px 0 20px;
-  padding: 9px 15px;
-
-  color: #ffffff;
-
-  background:
-    linear-gradient(
-      135deg,
-      var(--geppetto-pink),
-      #f51a9d
-    );
 
   border-radius: 8px;
 
