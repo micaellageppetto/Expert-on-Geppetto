@@ -3,62 +3,154 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Generate your personalized Expert on Geppetto certificate." />
-  <title>Made with ❤️ by Geppetto</title>
+  <meta
+    name="description"
+    content="Generate your personalized Expert on Geppetto certificate."
+  />
+
+  <title>Geppetto Expert Certificate</title>
+
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
-  <main class="page-shell">
-    <section class="hero" aria-labelledby="page-title">
-      <div class="badge" aria-hidden="true">★</div>
-      <p class="eyebrow">GEPPETTO's QUIZ</p>
-      <h1 id="page-title">You're an Expert on Geppetto. Congratulations!</h1>
-      <p class="intro">Insira o seu nome exatamente como quer que apareça no certificado.</p>
 
-      <form id="certificate-form" class="generator" novalidate>
-        <label for="full-name">Full name</label>
-        <div class="input-row">
-          <input
-            id="full-name"
-            name="full-name"
-            type="text"
-            maxlength="80"
-            autocomplete="name"
-            placeholder="Type your full name"
-            aria-describedby="name-help name-error"
+<body>
+  <div class="background-decoration background-decoration-blue"></div>
+  <div class="background-decoration background-decoration-pink"></div>
+
+  <main class="page-shell">
+
+    <section class="hero" aria-labelledby="page-title">
+
+      <aside class="geppetto-rail" aria-hidden="true">
+        <span class="rail-shape rail-shape-yellow"></span>
+        <span class="rail-shape rail-shape-purple"></span>
+        <span class="rail-shape rail-shape-pink"></span>
+        <span class="rail-shape rail-shape-cyan"></span>
+      </aside>
+
+      <div class="hero-content">
+
+        <div class="mascot-area">
+          <img
+            class="mascot-image"
+            src="mascote-geppetto.png"
+            alt=""
           />
-          <button class="primary-button" type="submit">Generate certificate</button>
         </div>
-        <p id="name-help" class="help-text">Your name is processed only in your browser and is not stored or shared.</p>
-        <p id="name-error" class="error-text" role="alert" aria-live="polite"></p>
-      </form>
+
+        <p class="eyebrow">GEPPETTO'S QUIZ</p>
+
+        <h1 id="page-title">
+          You're an Expert<br />
+          on Geppetto!
+        </h1>
+
+        <p class="celebration">Congratulations!</p>
+
+        <p class="intro">
+          Enter your name exactly as you want it to appear on your certificate.
+        </p>
+
+        <form id="certificate-form" class="generator" novalidate>
+
+          <label for="full-name">Full name</label>
+
+          <div class="input-row">
+            <input
+              id="full-name"
+              name="full-name"
+              type="text"
+              maxlength="80"
+              autocomplete="name"
+              placeholder="Type your full name"
+              aria-describedby="name-help name-error"
+            />
+
+            <button class="primary-button" type="submit">
+              Generate certificate
+            </button>
+          </div>
+
+          <p id="name-help" class="help-text">
+            Make sure your name is spelled correctly before generating your certificate.
+          </p>
+
+          <p
+            id="name-error"
+            class="error-text"
+            role="alert"
+            aria-live="polite"
+          ></p>
+
+        </form>
+      </div>
+
+      <div class="hero-pattern" aria-hidden="true">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
     </section>
 
-    <section id="result-section" class="result-section" aria-labelledby="preview-title" hidden>
+    <section
+      id="result-section"
+      class="result-section"
+      aria-labelledby="preview-title"
+      hidden
+    >
+
       <div class="result-header">
+
         <div>
-          <p class="eyebrow">PREVIEW</p>
-          <h2 id="preview-title">Your certificate is ready</h2>
+          <p class="eyebrow">YOUR CERTIFICATE</p>
+          <h2 id="preview-title">Your certificate is ready!</h2>
         </div>
-        <button id="edit-name" class="text-button" type="button">Edit name</button>
+
+        <button
+          id="edit-name"
+          class="text-button"
+          type="button"
+        >
+          Edit name
+        </button>
+
       </div>
 
       <div class="canvas-frame">
-        <canvas id="certificate-canvas" aria-label="Certificate preview"></canvas>
+        <canvas
+          id="certificate-canvas"
+          aria-label="Certificate preview"
+        ></canvas>
       </div>
 
       <div class="actions">
-        <button id="download-png" class="secondary-button" type="button">Download PNG</button>
+        <button
+          id="download-png"
+          class="secondary-button"
+          type="button"
+        >
+          Download PNG
+        </button>
       </div>
-      <p id="download-status" class="status-text" aria-live="polite"></p>
+
+      <p
+        id="download-status"
+        class="status-text"
+        aria-live="polite"
+      ></p>
+
     </section>
+
   </main>
 
   <footer>
-    <span>Geppetto Expert Certificate</span>
+    <strong>Geppetto</strong>
+    <span> — Learning through play</span>
   </footer>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js" integrity="sha512-qZvrmS2ekKPF2mSznTQsxqPgnpkI4DNTlrdUmTzrDgektczlKNRRhy5X5AAZTdQfLLQmRr8b7e50g7B1xO9m8g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="script.js"></script>
 </body>
 </html>
