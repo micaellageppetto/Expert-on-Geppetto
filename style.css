@@ -267,7 +267,7 @@ button {
 
 .mascot-area {
   position: absolute;
-  top: 24px;
+  top: 34px;
   right: 34px;
 
   width: 210px;
@@ -284,8 +284,8 @@ button {
 .mascot-image {
   display: block;
 
-  width: 190px;
-  height: 190px;
+  width: 260px;
+  height: 260px;
 
   object-fit: contain;
 
